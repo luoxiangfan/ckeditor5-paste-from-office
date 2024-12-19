@@ -1,6 +1,6 @@
 /**
  * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 /**
  * @module paste-from-office/pastefromoffice
@@ -34,6 +34,12 @@ export default class PasteFromOffice extends Plugin {
     /**
      * @inheritDoc
      */
+    static get isOfficialPlugin() {
+        return true;
+    }
+    /**
+     * @inheritDoc
+     */
     static get requires() {
         return [ClipboardPipeline];
     }
@@ -45,7 +51,8 @@ export default class PasteFromOffice extends Plugin {
         const clipboardPipeline = editor.plugins.get('ClipboardPipeline');
         const viewDocument = editor.editing.view.document;
         const normalizers = [];
-        normalizers.push(new MSWordNormalizer(viewDocument));
+        const hasMultiLevelListPlugin = this.editor.plugins.has('MultiLevelList');
+        normalizers.push(new MSWordNormalizer(viewDocument, hasMultiLevelListPlugin));
         normalizers.push(new GoogleDocsNormalizer(viewDocument));
         normalizers.push(new GoogleSheetsNormalizer(viewDocument));
         clipboardPipeline.on('inputTransformation', (evt, data) => {

@@ -1,6 +1,6 @@
 /**
  * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-licensing-options
  */
 /**
  * @module paste-from-office/filters/list
@@ -19,7 +19,7 @@ import { UpcastWriter, type ViewDocumentFragment } from 'ckeditor5/src/engine.js
  * @param documentFragment The view structure to be transformed.
  * @param stylesString Styles from which list-like elements styling will be extracted.
  */
-export declare function transformListItemLikeElementsIntoLists(documentFragment: ViewDocumentFragment, stylesString: string): void;
+export declare function transformListItemLikeElementsIntoLists(documentFragment: ViewDocumentFragment, stylesString: string, hasMultiLevelListPlugin: boolean): void;
 /**
  * Removes paragraph wrapping content inside a list item.
  */

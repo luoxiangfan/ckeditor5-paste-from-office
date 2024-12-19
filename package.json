@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-paste-from-wps-office",
-  "version": "v44.0.0",
+  "version": "v44.1.0",
   "description": "Paste from Office feature for CKEditor 5.WPS compatible.",
   "keywords": [
     "ckeditor",
@@ -14,10 +14,13 @@
   "type": "module",
   "main": "src/index.js",
   "dependencies": {
-    "ckeditor5": "^v44.0.0"
+    "@ckeditor/ckeditor5-clipboard": "44.1.0",
+    "@ckeditor/ckeditor5-core": "44.1.0",
+    "@ckeditor/ckeditor5-engine": "44.1.0",
+    "ckeditor5": "44.1.0"
   },
   "author": "CKSource (http://cksource.com/)",
-  "license": "GPL-2.0-or-later",
+  "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://ckeditor.com/ckeditor-5",
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
   "repository": {
@@ -26,6 +29,7 @@
     "directory": "packages/ckeditor5-paste-from-office"
   },
   "files": [
+    "dist",
     "lang",
     "src/**/*.js",
     "src/**/*.d.ts",
