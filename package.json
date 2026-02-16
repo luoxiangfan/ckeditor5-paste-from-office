@@ -17,7 +17,7 @@
     "@ckeditor/ckeditor5-clipboard": "47.4.0",
     "@ckeditor/ckeditor5-core": "47.4.0",
     "@ckeditor/ckeditor5-engine": "47.4.0",
-    "ckeditor5": "47.4.0"
+    "ckeditor5": "47.5.0"
   },
   "author": "CKSource (http://cksource.com/)",
   "license": "SEE LICENSE IN LICENSE.md",
