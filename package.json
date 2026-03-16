@@ -14,10 +14,10 @@
   "type": "module",
   "main": "src/index.js",
   "dependencies": {
-    "@ckeditor/ckeditor5-clipboard": "47.6.0",
-    "@ckeditor/ckeditor5-core": "47.6.0",
-    "@ckeditor/ckeditor5-engine": "47.6.0",
-    "ckeditor5": "47.6.0"
+    "@ckeditor/ckeditor5-clipboard": "47.6.1",
+    "@ckeditor/ckeditor5-core": "47.6.1",
+    "@ckeditor/ckeditor5-engine": "47.6.1",
+    "ckeditor5": "47.6.1"
   },
   "author": "CKSource (http://cksource.com/)",
   "license": "SEE LICENSE IN LICENSE.md",
